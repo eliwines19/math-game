@@ -31,21 +31,31 @@ html {
 }
 
 #correct {
+    text-align: center;
+    line-height: 350px;
+    opacity: 0;
+    transition: 0.3s;
     position: absolute;
-    left: 260px;
+    height: 400px;
+    width: 550px;
+    font-size: 125px;
     background-color: #42e252;
     color: rgb(255, 255, 255);
-    padding: 11px;
-    display: none;
+    /* padding: 11px; */
+    /* display: none; */
 }
 
 #wrong {
+    text-align: center;
+    line-height: 350px;
+    opacity: 0;
+    transition: 0.3s;
     position: absolute;
-    left: 250px;
+    height: 400px;
+    width: 550px;
+    font-size: 125px;
     background-color: #de401a;
-    padding: 11px;
     color: rgb(255, 255, 255);
-    display: none;
 }
 
 #question {
