@@ -104,10 +104,14 @@ window.addEventListener('load', (e) => {
 
     const rightAnswerClicked = () => {
         flashCorrectDiv();
-        var score = document.getElementById('score-value').innerText;
-        var newScore = parseInt(score, 10) + 1;
-        score.innerText = newScore.toString();
+        var score = document.getElementById('score-value');
+        addOneToScore(score);
         setTimeout(generateQA, 250)
+    }
+
+    const addOneToScore = (score) => {
+        let newScore = parseInt(score.innerText, 10) + 1;
+        score.innerText = newScore;
     }
 
     const flashCorrectDiv = () => {
